@@ -1,0 +1,812 @@
+fileFormatVersion: 2
+guid: f6b8b671e481d40ccba23a49c8e901d6
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -4435999627186811624
+    second: MCWalk_0
+  - first:
+      213: -1348185235553926266
+    second: MCWalk_1
+  - first:
+      213: 935055124505364011
+    second: MCWalk_2
+  - first:
+      213: -3188786619877390803
+    second: MCWalk_3
+  - first:
+      213: -5997759298029665891
+    second: MCWalk_4
+  - first:
+      213: -1103957005890377706
+    second: MCWalk_5
+  - first:
+      213: -5347924813983920172
+    second: MCWalk_6
+  - first:
+      213: -6323051137570829146
+    second: MCWalk_7
+  - first:
+      213: 6247080883548592007
+    second: MCWalk_8
+  - first:
+      213: -3896726439756008507
+    second: MCWalk_9
+  - first:
+      213: -571703191457031338
+    second: MCWalk_10
+  - first:
+      213: 4159003365033061690
+    second: MCWalk_11
+  - first:
+      213: -9221763992170646235
+    second: MCWalk_12
+  - first:
+      213: -3728133017066289615
+    second: MCWalk_13
+  - first:
+      213: -3764393393604191543
+    second: MCWalk_14
+  - first:
+      213: -7498824134727269366
+    second: MCWalk_15
+  - first:
+      213: 8461245737786197382
+    second: MCWalk_16
+  - first:
+      213: -9125908369494808840
+    second: MCWalk_17
+  - first:
+      213: 8445981391204844639
+    second: MCWalk_18
+  - first:
+      213: -2003436581882682914
+    second: MCWalk_19
+  - first:
+      213: -8339092735689668953
+    second: MCWalk_20
+  - first:
+      213: 7715818459325521740
+    second: MCWalk_21
+  - first:
+      213: -853220709307718667
+    second: MCWalk_21
+  - first:
+      213: 4666772523967369592
+    second: MCWalk_21
+  - first:
+      213: -4778627601239684150
+    second: MCWalk_21
+  - first:
+      213: -6347410592807317521
+    second: MCWalk_21
+  - first:
+      213: 7649548420410575093
+    second: MCWalk_21
+  - first:
+      213: -6572190821880269549
+    second: MCWalk_21
+  externalObjects: {}
+  serializedVersion: 11
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: -1
+    aniso: -1
+    mipBias: -100
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  applyGammaDecoding: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: iPhone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Android
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: WebGL
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 2
+    compressionQuality: 100
+    crunchedCompression: 1
+    allowsAlphaSplitting: 0
+    overridden: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: MCWalk_0
+      rect:
+        serializedVersion: 2
+        x: 27
+        y: 727
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81dc3cd87d92072c0800000000000000
+      internalID: -4435999627186811624
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_1
+      rect:
+        serializedVersion: 2
+        x: 195
+        y: 727
+        width: 158
+        height: 291
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683c167dba84a4de0800000000000000
+      internalID: -1348185235553926266
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_2
+      rect:
+        serializedVersion: 2
+        x: 365
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b260d8d7eabf9fc00800000000000000
+      internalID: 935055124505364011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_3
+      rect:
+        serializedVersion: 2
+        x: 534
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2680b1d6772fb3d0800000000000000
+      internalID: -3188786619877390803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_4
+      rect:
+        serializedVersion: 2
+        x: 705
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9145a822bda3cca0800000000000000
+      internalID: -5997759298029665891
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_5
+      rect:
+        serializedVersion: 2
+        x: 876
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 618a990c3f4fda0f0800000000000000
+      internalID: -1103957005890377706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_6
+      rect:
+        serializedVersion: 2
+        x: 1045
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dfcdf857ba58c5b0800000000000000
+      internalID: -5347924813983920172
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_7
+      rect:
+        serializedVersion: 2
+        x: 1214
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ac0678cd720048a0800000000000000
+      internalID: -6323051137570829146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_8
+      rect:
+        serializedVersion: 2
+        x: 1384
+        y: 727
+        width: 158
+        height: 290
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7871c0317f612b650800000000000000
+      internalID: 6247080883548592007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_9
+      rect:
+        serializedVersion: 2
+        x: 1553
+        y: 728
+        width: 158
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5c37873e2fb0ce9c0800000000000000
+      internalID: -3896726439756008507
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_10
+      rect:
+        serializedVersion: 2
+        x: 1724
+        y: 728
+        width: 158
+        height: 289
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65b1f34f9f6e018f0800000000000000
+      internalID: -571703191457031338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_11
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 394
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3d2370768fb7b930800000000000000
+      internalID: 4159003365033061690
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_12
+      rect:
+        serializedVersion: 2
+        x: 198
+        y: 394
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5253e241286b50080800000000000000
+      internalID: -9221763992170646235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_13
+      rect:
+        serializedVersion: 2
+        x: 373
+        y: 394
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136cb5206c2034cc0800000000000000
+      internalID: -3728133017066289615
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_14
+      rect:
+        serializedVersion: 2
+        x: 545
+        y: 394
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ca1563372032cbc0800000000000000
+      internalID: -3764393393604191543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_15
+      rect:
+        serializedVersion: 2
+        x: 717
+        y: 394
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0484701e23dee790800000000000000
+      internalID: -7498824134727269366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_16
+      rect:
+        serializedVersion: 2
+        x: 891
+        y: 394
+        width: 158
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 685c80e3b226c6570800000000000000
+      internalID: 8461245737786197382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_17
+      rect:
+        serializedVersion: 2
+        x: 1067
+        y: 393
+        width: 158
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f66f7760b24a5180800000000000000
+      internalID: -9125908369494808840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_18
+      rect:
+        serializedVersion: 2
+        x: 1241
+        y: 393
+        width: 158
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54035a9357263570800000000000000
+      internalID: 8445981391204844639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_19
+      rect:
+        serializedVersion: 2
+        x: 1418
+        y: 394
+        width: 158
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed12cde1b0d5234e0800000000000000
+      internalID: -2003436581882682914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_20
+      rect:
+        serializedVersion: 2
+        x: 1594
+        y: 394
+        width: 158
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a64d2cd657954c80800000000000000
+      internalID: -8339092735689668953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_22
+      rect:
+        serializedVersion: 2
+        x: 26
+        y: 55
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4fdf733208141b60800000000000000
+      internalID: 7715818459325521740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_23
+      rect:
+        serializedVersion: 2
+        x: 213
+        y: 55
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f3e4b21940c824f0800000000000000
+      internalID: -853220709307718667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_24
+      rect:
+        serializedVersion: 2
+        x: 394
+        y: 55
+        width: 158
+        height: 292
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 871d0aa82e4b3c040800000000000000
+      internalID: 4666772523967369592
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_25
+      rect:
+        serializedVersion: 2
+        x: 581
+        y: 54
+        width: 158
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: acb4b32d387eeadb0800000000000000
+      internalID: -4778627601239684150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_26
+      rect:
+        serializedVersion: 2
+        x: 767
+        y: 53
+        width: 158
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fef0b2422b779e7a0800000000000000
+      internalID: -6347410592807317521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_27
+      rect:
+        serializedVersion: 2
+        x: 947
+        y: 54
+        width: 158
+        height: 293
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f809b262c7a82a60800000000000000
+      internalID: 7649548420410575093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: MCWalk_21
+      rect:
+        serializedVersion: 2
+        x: 1755
+        y: 394
+        width: 157
+        height: 294
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3157eb9b443eac4a0800000000000000
+      internalID: -6572190821880269549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+  spritePackingTag: 
+  pSDRemoveMatte: 0
+  pSDShowRemoveMatteOption: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
