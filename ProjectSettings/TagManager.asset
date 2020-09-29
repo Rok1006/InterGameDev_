@@ -8,6 +8,12 @@ TagManager:
   - DeadZone
   - PlayerCam
   - RD
+  - Cup
+  - Bucket
+  - PC
+  - EnterPC
+  - Cart
+  - End
   layers:
   - Default
   - TransparentFX
@@ -19,7 +25,7 @@ TagManager:
   - 
   - Obstacle
   - Land
-  - 
+  - Front
   - 
   - 
   - 
@@ -53,4 +59,7 @@ TagManager:
     locked: 0
   - name: Control
     uniqueID: 4209949919
+    locked: 0
+  - name: SetUp
+    uniqueID: 175960105
     locked: 0
