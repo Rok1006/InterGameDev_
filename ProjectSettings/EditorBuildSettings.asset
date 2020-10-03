@@ -5,7 +5,7 @@ EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Scenes:
-  - enabled: 0
+  - enabled: 1
     path: Assets/Scenes/Week01.unity
     guid: 2cda990e2423bbf4892e6590ba056729
   - enabled: 0
@@ -14,7 +14,7 @@ EditorBuildSettings:
   - enabled: 0
     path: Assets/Scenes/FlatGame.unity
     guid: 7373339d96dc4426f8503ba7bc6e3a2c
-  - enabled: 1
+  - enabled: 0
     path: Assets/Scenes/RubeGoldBerg.unity
     guid: 03b49f8d1b75f4ef1aeb9c0534b1b5ff
   m_configObjects: {}
