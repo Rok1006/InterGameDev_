@@ -60,3 +60,11 @@ crashlytics-build.properties
 
 
 .idea/
+
+GD_Project1-3/.vscode/
+
+GD_Project1-3/Library/
+
+GD_Project1-3/Logs/
+
+GD_Project1-3/Packages/
