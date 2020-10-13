@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!78 &1
+TagManager:
+  serializedVersion: 2
+  tags:
+  - LD
+  - DeadZone
+  - PlayerCam
+  - RD
+  - Cup
+  - Bucket
+  - PC
+  - EnterPC
+  - Cart
+  - End
+  - Left
+  - Right
+  - Diamond
+  layers:
+  - Default
+  - TransparentFX
+  - Ignore Raycast
+  - 
+  - Water
+  - UI
+  - 
+  - 
+  - Obstacle
+  - Land
+  - Front
+  - Ground
+  - Dots
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  - 
+  m_SortingLayers:
+  - name: Default
+    uniqueID: 0
+    locked: 0
+  - name: BG
+    uniqueID: 323140161
+    locked: 0
+  - name: LD
+    uniqueID: 4079410045
+    locked: 0
+  - name: Control
+    uniqueID: 4209949919
+    locked: 0
+  - name: SetUp
+    uniqueID: 175960105
+    locked: 0
