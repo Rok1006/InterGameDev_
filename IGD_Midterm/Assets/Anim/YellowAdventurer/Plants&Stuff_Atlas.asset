@@ -12,6 +12,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: a6b194f808b1af6499c93410e504af42, type: 3}
   m_Name: Plants&Stuff_Atlas
   m_EditorClassIdentifier: 
-  atlasFile: {fileID: 4900000, guid: 7a110639bed7142ef961c04d80c51571, type: 3}
+  atlasFile: {fileID: 4900000, guid: fedc6cd171f1f495a8f9bfb1c6153235, type: 3}
   materials:
-  - {fileID: 2100000, guid: 98e8d9739031e4f88801634028981a31, type: 2}
+  - {fileID: 2100000, guid: ce332debea8514a86a8c91a0ebeda723, type: 2}

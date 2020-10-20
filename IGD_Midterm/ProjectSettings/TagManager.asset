@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - Leaf
   layers:
   - Default
   - TransparentFX
@@ -15,7 +16,7 @@ TagManager:
   - 
   - Ground
   - BG
-  - 
+  - Player
   - 
   - 
   - 
@@ -44,11 +45,14 @@ TagManager:
   - name: BG
     uniqueID: 703160495
     locked: 0
-  - name: Player
-    uniqueID: 1100453905
+  - name: Object
+    uniqueID: 1734737305
     locked: 0
   - name: Ground
     uniqueID: 1664475355
+    locked: 0
+  - name: Player
+    uniqueID: 1100453905
     locked: 0
   - name: Fore
     uniqueID: 3363664611
