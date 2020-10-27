@@ -5,6 +5,16 @@ TagManager:
   serializedVersion: 2
   tags:
   - Leaf
+  - MiddleScene
+  - TreeScene
+  - NormalScene
+  - Left
+  - Right
+  - GhostSpider
+  - PlayerHitBox
+  - Object
+  - GSHitBox
+  - GSAttackSpot
   layers:
   - Default
   - TransparentFX
@@ -17,10 +27,10 @@ TagManager:
   - Ground
   - BG
   - Player
-  - 
-  - 
-  - 
-  - 
+  - YellowLeaf
+  - Object
+  - HitBox
+  - Ball
   - 
   - 
   - 
@@ -45,6 +55,15 @@ TagManager:
   - name: BG
     uniqueID: 703160495
     locked: 0
+  - name: Effects
+    uniqueID: 1319182855
+    locked: 0
+  - name: Enemy
+    uniqueID: 2599770965
+    locked: 0
+  - name: TheTree
+    uniqueID: 3823517643
+    locked: 0
   - name: Object
     uniqueID: 1734737305
     locked: 0
@@ -56,4 +75,7 @@ TagManager:
     locked: 0
   - name: Fore
     uniqueID: 3363664611
+    locked: 0
+  - name: UI
+    uniqueID: 3623147037
     locked: 0

@@ -19,20 +19,36 @@ public class PlayerController : MonoBehaviour
     private float jumpTimeCounter;
     public float jumpTime;
     private bool isJumping;
-    Animator animator;
+    public Animator animator;
     public bool lampOut;
     public int lamp;
     public GameObject LampLight;
     public GameObject LampLight2;
-
+    public GameObject[] Cam;
+    public GameObject hitBox;
+    private bool attacking;
+     public Objects obj;
+     public GhostSpider gs;
+     public GameObject GS;
+     public int PlayerHealth;
+     public static PlayerController Instance;
+void Awake() {
+    Instance = this;
+}
     void Start()
     {
         rb = GetComponent<Rigidbody2D>();
         animator = GetComponent<Animator>();
         lampOut = false;
-        lamp = 0;
+        // lamp = 0;
         LampLight.SetActive(false);
         LampLight2.SetActive(false);
+        hitBox.SetActive(false);
+        attacking = false;
+          obj = GameObject.Find("Box").GetComponent<Objects>();
+          gs = GameObject.Find("GS").GetComponent<GhostSpider>();
+          //PlayerHealth = 5;  //change to larger later
+
     }
 
     void FixedUpdate() //!
@@ -43,29 +59,41 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        // if(lamp <1){
-        if(Input.GetKey(KeyCode.Z)){
-            lampOut = true;
-            lamp = 1; //change to 1
-            LampLight.SetActive(true);
-            LampLight2.SetActive(true);
-            
-        }
-       // }
-        // if(lamp >0){
-        if(Input.GetKey(KeyCode.X)){
-            lampOut = false;
-            lamp = 0;
-            LampLight.SetActive(false);
-            LampLight2.SetActive(false);
-            }
-       // }
-       if(lampOut){
-       if(Input.GetKeyDown(KeyCode.F)){
-           animator.SetTrigger("isAttackingwLamp");
-           animator.SetBool("isIDLEwLamp", false);
+        // if(lamp ==0){
+    //     if(Input.GetKey(KeyCode.Z)){
+    //         lampOut = true;
+    //         //lamp = 1; //change to 1
+    //         LampLight.SetActive(true);
+    //         LampLight2.SetActive(true);
+    //     }
+    //    //}
+    //     // if(lamp ==1){
+    //     if(Input.GetKey(KeyCode.X)){
+    //         lampOut = false;
+    //         //lamp = 0;
+    //         LampLight.SetActive(false);
+    //         LampLight2.SetActive(false);
+    //         }
+    //   // }
+    //    if(lampOut){
+    //    if(Input.GetKeyDown(KeyCode.F)){
+    //        animator.SetTrigger("isAttackingwLamp");
+    //        animator.SetBool("isIDLEwLamp", false);
+    //    }
+    if(LampController.Instance.lampOut){
+       if(Input.GetKey(KeyCode.F)){   //playerhit
+        hitBox.SetActive(true);
+        attacking = true;
+       }else{
+            hitBox.SetActive(false);
+            attacking = false;
        }
-       }
+    }
+       
+
+    //    if(Input.GetKeyDown(KeyCode.G)){
+    //        animator.SetTrigger("LightLamp");
+    //    }
         
         //Movement Starts
         isGrounded = Physics2D.OverlapCircle(groundPos.position, checkRadius, whatIsGround);
@@ -83,7 +111,7 @@ public class PlayerController : MonoBehaviour
         
         if (isGrounded == true)
         {
-            if(!lampOut){
+            if(!LampController.Instance.lampOut){
             animator.SetBool("isIDLE", true);
             animator.SetBool("isJumping", false);
             //
@@ -91,7 +119,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isJumpingwLamp", false);
             animator.SetBool("isWalkingwLamp", false);
             }
-            if(lampOut){
+            if(LampController.Instance.lampOut){
             animator.SetBool("isIDLEwLamp", true);
             animator.SetBool("isJumpingwLamp", false);
             //
@@ -102,7 +130,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-            if(!lampOut){
+            if(!LampController.Instance.lampOut){
             animator.SetBool("isIDLE", false);
             animator.SetBool("isJumping", true);
             //
@@ -110,7 +138,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isJumpingwLamp", false);
             animator.SetBool("isWalkingwLamp", false);
             }
-             if(lampOut){
+             if(LampController.Instance.lampOut){
             animator.SetBool("isIDLEwLamp", false);
             animator.SetBool("isJumpingwLamp", true);
             //
@@ -151,7 +179,7 @@ public class PlayerController : MonoBehaviour
 
         if (movement.x == 0)   //for animation just check the teacher sample
         {
-            if(!lampOut){
+            if(!LampController.Instance.lampOut){
             animator.SetBool("isWalking", false);
             //
             animator.SetBool("isIDLEwLamp", false);
@@ -159,7 +187,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isWalkingwLamp", false);
             }
            // animator.SetBool("isIDLE", true);
-            if(lampOut){
+            if(LampController.Instance.lampOut){
             animator.SetBool("isWalkingwLamp", false);
             //
             animator.SetBool("isIDLE", false);
@@ -169,7 +197,7 @@ public class PlayerController : MonoBehaviour
         }
         else
         {
-             if(!lampOut){
+             if(!LampController.Instance.lampOut){
             animator.SetBool("isWalking", true);
             animator.SetBool("isIDLE", false);
             //
@@ -177,7 +205,7 @@ public class PlayerController : MonoBehaviour
             animator.SetBool("isJumpingwLamp", false);
             animator.SetBool("isWalkingwLamp", false);
              }
-              if(lampOut){
+              if(LampController.Instance.lampOut){
             animator.SetBool("isWalkingwLamp", true);
             animator.SetBool("isIDLEwLamp", false);
             //
@@ -198,6 +226,64 @@ public class PlayerController : MonoBehaviour
         //movement Ends
 
     }
+    void OnTriggerEnter2D(Collider2D col) {
+        if(col.gameObject.tag == "NormalScene"){
+            Cam[0].SetActive(true);
+            Cam[1].SetActive(false);
+            Cam[2].SetActive(false);
+        }
+        // else{
+        //     Cam[0].SetActive(false);
+        // }
+        if(col.gameObject.tag == "MiddleScene"){
+            Cam[1].SetActive(true);
+             Cam[0].SetActive(false);
+            Cam[2].SetActive(false);
+        }
+        // else{
+        //     Cam[1].SetActive(false);
+        // }
+        if(col.gameObject.tag == "TreeScene"){
+            Cam[2].SetActive(true);
+             Cam[1].SetActive(false);
+            Cam[0].SetActive(false);
+        }
+        //DESTROYING OBJECT
+       if(col.gameObject.tag == "Object"){
+             if(attacking){
+             obj.boxLife-=1;
+             obj.anim.SetTrigger("Hit");
+             }
+             if(obj.boxLife<1){
+                 obj.emit=true;
+             }
+
+         }
+         if(col.gameObject.tag == "GSHitBox"){
+             if(attacking){
+                 gs.gsAnim.SetBool("IDLE",false);  
+                 gs.gsAnim.SetTrigger("BeingHit");
+                 gs.emit=true;
+                 gs.gsHealth-=1;
+
+            if(GS.transform.eulerAngles.y == 180){
+            GS.transform.eulerAngles = new Vector3(0, 0, 0);
+            }else{
+                GS.transform.eulerAngles = new Vector3(0, 180, 0);
+            }
+             }
+                if(gs.gsHealth<1){
+                 obj.emit=true;
+             }
+     
+
+         }
+    }
+    void OnCollisionEnter2D(Collision2D col)
+    {
+      
+    }
+    
 }
 
 

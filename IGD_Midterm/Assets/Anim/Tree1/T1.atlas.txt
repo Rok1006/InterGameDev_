@@ -1,0 +1,76 @@
+
+T1.png
+size: 667,1026
+format: RGBA8888
+filter: Linear,Linear
+repeat: none
+B1
+  rotate: false
+  xy: 454, 917
+  size: 166, 107
+  orig: 166, 107
+  offset: 0, 0
+  index: -1
+B2
+  rotate: false
+  xy: 622, 853
+  size: 39, 79
+  orig: 39, 79
+  offset: 0, 0
+  index: -1
+B3
+  rotate: false
+  xy: 596, 703
+  size: 68, 148
+  orig: 68, 148
+  offset: 0, 0
+  index: -1
+B4
+  rotate: true
+  xy: 454, 828
+  size: 87, 140
+  orig: 87, 140
+  offset: 0, 0
+  index: -1
+B5
+  rotate: true
+  xy: 454, 739
+  size: 87, 140
+  orig: 87, 140
+  offset: 0, 0
+  index: -1
+B6
+  rotate: false
+  xy: 622, 934
+  size: 39, 90
+  orig: 39, 90
+  offset: 0, 0
+  index: -1
+MB
+  rotate: true
+  xy: 2, 348
+  size: 232, 663
+  orig: 232, 663
+  offset: 0, 0
+  index: -1
+YB0
+  rotate: false
+  xy: 2, 582
+  size: 450, 442
+  orig: 450, 442
+  offset: 0, 0
+  index: -1
+YB1
+  rotate: true
+  xy: 2, 2
+  size: 344, 338
+  orig: 344, 338
+  offset: 0, 0
+  index: -1
+YB2
+  rotate: false
+  xy: 342, 83
+  size: 264, 263
+  orig: 264, 263
+  offset: 0, 0
+  index: -1
