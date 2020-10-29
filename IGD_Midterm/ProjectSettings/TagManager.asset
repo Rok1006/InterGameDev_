@@ -15,6 +15,10 @@ TagManager:
   - Object
   - GSHitBox
   - GSAttackSpot
+  - YellowLeaf
+  - Life
+  - TreeLamp
+  - EnterWell
   layers:
   - Default
   - TransparentFX
@@ -31,8 +35,8 @@ TagManager:
   - Object
   - HitBox
   - Ball
-  - 
-  - 
+  - Enemy
+  - Front
   - 
   - 
   - 
@@ -58,20 +62,23 @@ TagManager:
   - name: Effects
     uniqueID: 1319182855
     locked: 0
-  - name: Enemy
-    uniqueID: 2599770965
-    locked: 0
   - name: TheTree
     uniqueID: 3823517643
     locked: 0
-  - name: Object
-    uniqueID: 1734737305
+  - name: Enemy
+    uniqueID: 2599770965
     locked: 0
   - name: Ground
     uniqueID: 1664475355
     locked: 0
+  - name: Object
+    uniqueID: 1734737305
+    locked: 0
   - name: Player
     uniqueID: 1100453905
+    locked: 0
+  - name: Well
+    uniqueID: 258461231
     locked: 0
   - name: Fore
     uniqueID: 3363664611

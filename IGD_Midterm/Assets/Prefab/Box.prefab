@@ -102,7 +102,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1734737305
-  m_SortingLayer: 2
+  m_SortingLayer: 5
   m_SortingOrder: 0
   m_Sprite: {fileID: 3725462243821030202, guid: c6861ca5341334011bd2563e3d044b3f,
     type: 3}
@@ -160,7 +160,7 @@ MonoBehaviour:
   EmitSpot: {fileID: 5409616178084892505}
   emit: 0
   anim: {fileID: 0}
-  Leaf: {fileID: 260901222912878394, guid: 95976a39f78a543b7b321c4b02b9942a, type: 3}
+  Leaf: {fileID: 6698173409439140710, guid: ef1bc424e0b3442c48f32911286e90e9, type: 3}
 --- !u!95 &5409616178253098772
 Animator:
   serializedVersion: 3

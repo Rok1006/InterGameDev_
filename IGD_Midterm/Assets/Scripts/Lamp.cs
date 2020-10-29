@@ -15,6 +15,7 @@ public class Lamp : MonoBehaviour
     public PlayerController PC;
     private bool interactable = true;
     Animator lampAnim;
+    public bool inZone;
     void Awake()
     {
         PC = GameObject.Find("YellowPlayer").GetComponent<PlayerController>();
@@ -29,6 +30,7 @@ public class Lamp : MonoBehaviour
         Slider.SetActive(false);
         Light.SetActive(false);
         lampAnim = GetComponent<Animator>();
+        inZone = false;
     }
 
     // Update is called once per frame
@@ -47,19 +49,49 @@ public class Lamp : MonoBehaviour
             this.enabled = false;
             interactable = false;
             lampAnim.SetTrigger("LampOn");
+            PlayerController.Instance.NumLeaf-=1;
+               if(this.gameObject.tag =="TreeLamp"){
+                    Debug.Log("yes");
+                    SceneManager1.Instance.treeLamp+=1;
+                }
+          
         }
+        if(inZone){
+            if(PlayerController.Instance.NumLeaf>0){
+                  if(Input.GetKeyDown(KeyCode.G)){
+                //Debug.Log("yes");
+                valueMove = true;
+                Button.SetActive(false);
+                Slider.SetActive(true);
+                PC.enabled = false;
+             
+            }
+            }
+        }
+     
     }
 
     public void ClickButton(){
-        valueMove = true;
-        Button.SetActive(false);
-        Slider.SetActive(true);
-        PC.enabled = false;
+        // valueMove = true;
+        // Button.SetActive(false);
+        // Slider.SetActive(true);
+        // PC.enabled = false;
     }
 
      void OnTriggerEnter2D(Collider2D col)
     {
         if(col.gameObject.tag == "Player"){
+            inZone = true;
+            // if(Input.GetKeyDown(KeyCode.G)){
+            //     pressed = true;
+            //     Debug.Log("yes");
+            //     // valueMove = true;
+            //     // Button.SetActive(false);
+            //     // Slider.SetActive(true);
+            //     // PC.enabled = false;
+            // }
+
+
             if(interactable){
             Button.SetActive(true);
             }
@@ -68,6 +100,7 @@ public class Lamp : MonoBehaviour
 
     void OnTriggerExit2D(Collider2D col) {
         if(col.gameObject.tag == "Player"){
+            inZone = false;
             Button.SetActive(false);
         }
         

@@ -333,7 +333,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 1734737305
-  m_SortingLayer: 2
+  m_SortingLayer: 6
   m_SortingOrder: 0
   m_Sprite: {fileID: -1920470951597068672, guid: c6861ca5341334011bd2563e3d044b3f,
     type: 3}
@@ -386,6 +386,7 @@ MonoBehaviour:
   Slider: {fileID: 7710290449852209995}
   Light: {fileID: 7710290449843057608}
   PC: {fileID: 0}
+  inZone: 0
 --- !u!61 &7710290449594112933
 BoxCollider2D:
   m_ObjectHideFlags: 0
@@ -461,7 +462,7 @@ MonoBehaviour:
   m_Color: {r: 1, g: 0.9717982, b: 0.8632076, a: 1}
   m_Intensity: 1
   m_LightVolumeOpacity: 0
-  m_ApplyToSortingLayers: 00000000af60e9291198974199fd6567
+  m_ApplyToSortingLayers: 00000000af60e9291198974199fd6567555bf59a
   m_LightCookieSprite: {fileID: 0}
   m_UseNormalMap: 0
   m_LightOrder: 0

@@ -11,6 +11,9 @@ public class Objects : MonoBehaviour
     public bool emit;
     public Animator anim;
     public GameObject Leaf;  //leaf prefab
+    public GameObject Life;
+    public int num;
+    public bool emitLife;
     // void Awake(){
     //     Instance = this;
     // }
@@ -20,6 +23,10 @@ public class Objects : MonoBehaviour
         emit = false;
         boxLife=4;
         anim = GetComponent<Animator>();
+        this.gameObject.name = "Box";
+        emitLife = false;
+        RanNum();
+        Debug.Log(num);
     }
 
     // Update is called once per frame
@@ -35,10 +42,18 @@ public class Objects : MonoBehaviour
             Leaf.SetActive(true);
             emit = false;
                   Destroy(c, 1.7f);
-                  Destroy(this.gameObject,1.7f);
+                  Destroy(this.gameObject);
             
        
         }
+        if(emitLife){
+        GameObject li = Instantiate(Life,EmitSpot.transform.position, Quaternion.identity);
+         emitLife = false;
+        }
+    }
+
+    void RanNum(){
+        num = Random.Range(0,3);
     }
     void OnCollisionEnter2D(Collision2D col)
     {

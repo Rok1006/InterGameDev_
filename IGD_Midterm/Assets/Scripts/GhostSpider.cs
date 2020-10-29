@@ -23,9 +23,26 @@ public class GhostSpider : MonoBehaviour
     public bool dead;
     public GameObject body;
     public GameObject Leaf;
+    public GameObject Life;
     public GameObject AttackBox;
+    public GameObject PlayerCam;
+       public GameObject MiddleCam;
+          public GameObject TreeCam;
+   public Animator camAnim;
+    public Animator middlecamAnim;
+    public Animator treecamAnim;
+    public bool alive;
+    public int damageToPlayer;
+    AudioSource dying;
+    AudioSource s;
+    AudioSource monsterS;
+    AudioSource beinghit;
+    public AudioSource attack;
 
-    // Start is called before the first frame update
+    public static GhostSpider Instance;
+  void Awake() {
+    Instance = this;
+}
     void Start()
     {
         gsAnim = GetComponent<Animator>();
@@ -40,11 +57,39 @@ public class GhostSpider : MonoBehaviour
         gsHealth = 3;  //change to bigger number
         body.SetActive(true);
         AttackBox.SetActive(false);
+        camAnim = PlayerCam.GetComponent<Animator>();
+        middlecamAnim = MiddleCam.GetComponent<Animator>();
+        treecamAnim = TreeCam.GetComponent<Animator>();
+        alive = true;
+          this.gameObject.name = "GS";
+
+        AudioSource[] audios1 = GetComponents<AudioSource>();
+        s = audios1[0];
+        monsterS= audios1[1];
+        beinghit = audios1[2];
+        attack = audios1[3];
+        dying = audios1[4];
+        
+    }
+
+    public void Steps(){
+        s.Play();
+        monsterS.Play();
+    }
+     public void BeingHit(){
+        beinghit.Play();
+    }
+     public void Attack(){
+        //attack.Play();
+    }
+     public void Dying(){
+        dying.Play();
     }
 
     // Update is called once per frame
     void FixedUpdate()
     {
+        //Target = GameObject.FindGameObjectWithTag("Player");
         //facing left
            if(transform.eulerAngles.y == 0){
                detectL = true;
@@ -154,6 +199,7 @@ public class GhostSpider : MonoBehaviour
         GameObject w = Instantiate(whiteBlood,EmitSpot.transform.position, Quaternion.identity);
         if(gsHealth<1){
         GameObject l = Instantiate(Leaf,EmitSpot.transform.position, Quaternion.identity);
+        GameObject li = Instantiate(Life,EmitSpot.transform.position, Quaternion.identity);
         }
         emit = false;
         Destroy(w, 1.7f);
@@ -169,6 +215,9 @@ public class GhostSpider : MonoBehaviour
         detected = false;
         dead = true;
         body.SetActive(false);
+        AttackBox.SetActive(false);
+        alive = false;
+
         }
      
     }
@@ -179,15 +228,18 @@ public class GhostSpider : MonoBehaviour
 
     //   }
     }
-    void OnTriggerEnter2D(Collider2D col) {
-        if(col.gameObject.tag == "Player"){
-          PlayerController.Instance.PlayerHealth-=1;
+    // void OnTriggerEnter2D(Collider2D col) {
+    //     if(col.gameObject.tag == "Player"){
+    //       //PlayerController.Instance.PlayerHealth-=2;   
+    //       if(alive){
+    //           attack.Play();
+    //     camAnim.SetTrigger("Shake");
+    //     middlecamAnim.SetTrigger("Shake");
+    //     treecamAnim.SetTrigger("Shake");
+     
+    //       }
+        
 
-        //   if(isAttacking){
-        //       PlayerController.Instance.animator.SetTrigger("Injured");
-        //       PlayerController.Instance.animator.SetBool("IDLE",false); 
-        //   }
-
-      }
-    }
+    //   }
+    // }
 }

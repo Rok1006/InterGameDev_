@@ -9,6 +9,7 @@ public class HealthManager : MonoBehaviour
     public GameObject heart;  //prefab
     public bool[] full;
     public bool addHeart;
+    public bool reduceHeart;
     public List<GameObject> GeneratedHeart = new List<GameObject>();
     public int n;
     public bool addHeartAgain;
@@ -22,6 +23,7 @@ public class HealthManager : MonoBehaviour
         ToStart();
         n = 1;
         addHeartAgain = false;
+        reduceHeart = false;
     }
     public void ToStart()
     {
@@ -42,6 +44,11 @@ public class HealthManager : MonoBehaviour
 
     void Update()
     {
+        // if(PlayerController.Instance.PlayerHealth==39 || PlayerController.Instance.PlayerHealth==29 || PlayerController.Instance.PlayerHealth==19 || PlayerController.Instance.PlayerHealth==9){
+        //     reduceHeart = true;
+        // }
+
+
 
         if(addHeartAgain){
             for (int i = 0; i < GeneratedHeart.Count; i++){
@@ -62,8 +69,8 @@ public class HealthManager : MonoBehaviour
             addHeartAgain = false;
         }
 
-//destroy heart when losing
-    if(Input.GetKeyDown(KeyCode.B)){
+//destroy heart when losing:reduce heart
+    if(reduceHeart){   //Input.GetKeyDown(KeyCode.B)
 
          for (int i = 0; i < GeneratedHeart.Count; i++){
             if (GeneratedHeart[i] != null){  //this destroy all hearts
@@ -76,7 +83,7 @@ public class HealthManager : MonoBehaviour
          }  
     }
     n++;
-
+    reduceHeart = false;
     }
     //add heart back
   if(Input.GetKeyDown(KeyCode.V)){
