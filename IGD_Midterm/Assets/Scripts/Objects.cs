@@ -21,7 +21,7 @@ public class Objects : MonoBehaviour
     void Start()
     {
         emit = false;
-        boxLife=4;
+        boxLife=2;
         anim = GetComponent<Animator>();
         this.gameObject.name = "Box";
         emitLife = false;

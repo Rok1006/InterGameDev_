@@ -328,7 +328,7 @@ if(canMove){
         if(col.gameObject.tag == "Life"){
             SoundEvent.Instance.PickUp();
             if(PlayerHealth<50){
-                PlayerHealth+=0.5f;
+                PlayerHealth+=2f;
                 heartAnim.SetTrigger("HeartShake");
             }
         camAnim.SetTrigger("Shake");

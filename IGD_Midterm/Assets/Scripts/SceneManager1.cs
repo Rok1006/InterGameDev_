@@ -77,15 +77,19 @@ public class SceneManager1 : MonoBehaviour
             }
         }
 
+        if(PlayerController.Instance.PlayerHealth<1){
+            End.SetActive(true);
+        }
+
 
         if(!infoUp){
-        if(Input.GetKeyDown(KeyCode.X)){
+        if(Input.GetKeyDown(KeyCode.Z)){
             liAnim.SetTrigger("InfoUp");
             infoUp = true;
             //liAnim.SetTrigger("InfoDown");
         }
         }else{
-             if(Input.GetKeyDown(KeyCode.X)){
+             if(Input.GetKeyDown(KeyCode.Z)){
             //liAnim.SetTrigger("InfoUp");
             liAnim.SetTrigger("InfoDown");
             infoUp = false;

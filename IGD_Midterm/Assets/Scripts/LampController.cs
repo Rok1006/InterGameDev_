@@ -20,25 +20,25 @@ public class LampController : MonoBehaviour
     {
         animator = GetComponent<Animator>();
         hAnim = Health.GetComponent<Animator>();
-        lampOut = false;
+        lampOut = true;
         // lamp = 0;
-        LampLight.SetActive(false);
-        LampLight2.SetActive(false);
-        PlayerController.Instance.canMove = false;
+        LampLight.SetActive(true);
+        LampLight2.SetActive(true);
+        PlayerController.Instance.canMove = true;
          //this.GetComponent<PlayerController>().enabled = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(Input.GetKey(KeyCode.Z)){
+        // if(Input.GetKey(KeyCode.Z)){
             lampOut = true;
             //lamp = 1; //change to 1
             LampLight.SetActive(true);
             LampLight2.SetActive(true);
             //this.GetComponent<PlayerController>().enabled = true;
-             PlayerController.Instance.canMove = true;
-        }
+             //PlayerController.Instance.canMove = true;
+       // }
        //}
         // if(lamp ==1){
         // if(Input.GetKey(KeyCode.X)){  //if light out
